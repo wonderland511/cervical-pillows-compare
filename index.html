@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="color-scheme" content="dark light">
+<title>Цервикальные подушки: сравнение</title>
+<style>
+:root{
+  --bg:#0b0c10; --bg2:#121319; --card:#16171f; --card2:#1c1d27; --line:rgba(255,255,255,.09);
+  --text:#f2f2f5; --muted:#a3a5b3; --faint:#6f7183;
+  --accent:#9aa8ff; --accent-ink:#0b0c10; --accent-soft:rgba(154,168,255,.14);
+  --good:#5fd39a; --good-soft:rgba(95,211,154,.13);
+  --bad:#ff8a80; --bad-soft:rgba(255,138,128,.13);
+  --warn:#ffcf6b; --warn-soft:rgba(255,207,107,.13);
+  --shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 20px 50px -25px rgba(0,0,0,.6);
+  --r:22px;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f5f5f7; --bg2:#ffffff; --card:#ffffff; --card2:#f3f3f6; --line:rgba(0,0,0,.08);
+    --text:#1d1d1f; --muted:#5c5e6b; --faint:#8a8c99;
+    --accent:#4453d6; --accent-ink:#ffffff; --accent-soft:rgba(68,83,214,.09);
+    --good:#1a8f57; --good-soft:rgba(26,143,87,.09);
+    --bad:#c8372d; --bad-soft:rgba(200,55,45,.08);
+    --warn:#9a6700; --warn-soft:rgba(154,103,0,.09);
+    --shadow:0 1px 2px rgba(0,0,0,.04), 0 18px 40px -24px rgba(0,0,0,.18);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:10px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+@media (max-width:520px){.wrap{padding:0 16px}}
+
+@keyframes fadeInUp{ from{opacity:0;transform:translateY(16px);} to{opacity:1;transform:translateY(0);} }
+.fade{animation:fadeInUp .6s ease-out both}
+.d1{animation-delay:.06s}.d2{animation-delay:.12s}.d3{animation-delay:.18s}.d4{animation-delay:.24s}
+@media (prefers-reduced-motion: reduce){ .fade{animation:none;opacity:1;transform:none} html{scroll-behavior:auto} }
+
+/* hero */
+header.hero{padding:64px 0 28px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:999px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.03em;margin:18px 0 14px;font-weight:700}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:760px;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:13.5px;color:var(--muted);background:var(--card);border:1px solid var(--line);padding:7px 12px;border-radius:999px}
+.chip b{color:var(--text);font-weight:600}
+
+/* verdict */
+.verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 8px}
+@media (max-width:860px){.verdict{grid-template-columns:1fr}}
+.v{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);position:relative}
+.v .tag{font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.v.best{border-color:color-mix(in srgb,var(--good) 45%,var(--line))}
+.v.best .tag{color:var(--good)} .v.alt .tag{color:var(--accent)} .v.budget .tag{color:var(--warn)}
+.v h3{margin:8px 0 6px;font-size:21px;letter-spacing:-.015em;line-height:1.2}
+.v p{margin:0;color:var(--muted);font-size:15.5px}
+.v .price{margin-top:12px;font-size:15px;color:var(--text)}
+.v .price b{font-size:22px;letter-spacing:-.02em}
+.v a.jump{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;font-weight:600}
+
+section{padding:46px 0 6px}
+h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.025em;line-height:1.1;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 22px;max-width:760px}
+
+/* product card */
+.product{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden;margin-bottom:22px;scroll-margin-top:16px}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+.gallery{background:var(--card2);padding:18px;display:flex;flex-direction:column;gap:12px}
+.stage{position:relative;border-radius:18px;overflow:hidden;background:#fff;aspect-ratio:1/1}
+.slides{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.slides::-webkit-scrollbar{display:none}
+.slides button{flex:0 0 100%;height:100%;scroll-snap-align:center;border:0;padding:0;background:#fff;cursor:zoom-in}
+.slides img{width:100%;height:100%;object-fit:contain;display:block}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(20,20,28,.55);color:#fff;font-size:22px;cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.nav.prev{left:10px}.nav.next{right:10px}
+.nav:hover{background:rgba(20,20,28,.75)}
+.zoomhint{position:absolute;right:10px;bottom:10px;font-size:12px;color:#fff;background:rgba(20,20,28,.55);padding:5px 9px;border-radius:999px;pointer-events:none}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.thumbs button{flex:0 0 64px;height:64px;border-radius:12px;border:2px solid transparent;padding:0;overflow:hidden;background:#fff;cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s}
+.thumbs button[aria-current="true"]{border-color:var(--accent);opacity:1}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.pbody{padding:26px 26px 24px}
+@media (max-width:520px){.pbody{padding:20px 18px}}
+.rank{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.rank.r1{color:var(--good);background:var(--good-soft)}
+.rank.r2{color:var(--accent);background:var(--accent-soft)}
+.rank.r3{color:var(--warn);background:var(--warn-soft)}
+.product h3{font-size:clamp(24px,3.4vw,30px);letter-spacing:-.025em;line-height:1.12;margin:12px 0 6px}
+.product .brandline{color:var(--muted);margin:0 0 14px;font-size:15.5px}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+@media (max-width:520px){.specs{grid-template-columns:1fr}}
+.specs li{background:var(--card2);border-radius:14px;padding:10px 12px;font-size:14.5px;line-height:1.35}
+.specs li span{display:block;font-size:12px;color:var(--faint);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+@media (max-width:620px){.pc{grid-template-columns:1fr}}
+.pc div{border-radius:16px;padding:14px 16px}
+.pc .plus{background:var(--good-soft)} .pc .minus{background:var(--bad-soft)}
+.pc h4{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.04em}
+.pc .plus h4{color:var(--good)} .pc .minus h4{color:var(--bad)}
+.pc ul{margin:0;padding-left:18px;font-size:15px}
+.pc li{margin:4px 0}
+.buy h4{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.shops{display:flex;flex-direction:column;gap:8px}
+.shop{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center;min-height:56px;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card2);color:var(--text);transition:border-color .2s,transform .2s}
+.shop:hover{text-decoration:none;border-color:var(--accent)}
+.shop .n{font-weight:600}
+.shop .n small{display:block;font-weight:400;font-size:12.5px;color:var(--faint)}
+.shop .p{text-align:right;font-weight:700;font-size:17px;white-space:nowrap}
+.shop .p small{display:block;font-weight:400;font-size:12.5px;color:var(--muted)}
+.ok{color:var(--good)} .unv{color:var(--warn)}
+.note{font-size:13.5px;color:var(--faint);margin:10px 0 0}
+
+/* table */
+.tablewrap{overflow-x:auto;border-radius:22px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
+th,td{padding:13px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:var(--card2);position:sticky;top:0}
+tbody th{font-weight:600;color:var(--muted);width:170px}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+td.win{background:var(--good-soft)}
+
+/* fit */
+.fit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:860px){.fit{grid-template-columns:1fr}}
+.fitcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.fitcard h4{margin:0 0 10px;font-size:17px}
+.case{position:relative;height:120px;border-radius:14px;border:2px dashed var(--faint);margin:6px 0 12px;display:grid;place-items:center}
+.case .pil{background:var(--accent-soft);border:2px solid var(--accent);border-radius:12px;display:grid;place-items:center;font-size:12.5px;color:var(--text);text-align:center;line-height:1.2}
+.case .lbl{position:absolute;top:6px;left:10px;font-size:11.5px;color:var(--faint)}
+.fitcard p{margin:0;color:var(--muted);font-size:15px}
+.h2row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.sticker{flex:0 0 auto;width:118px;height:auto;border-radius:22px;border:4px solid #fff;box-shadow:0 10px 26px -10px rgba(0,0,0,.45);transform:rotate(5deg);margin-bottom:6px;cursor:default}
+@media (max-width:520px){.sticker{width:92px;border-radius:18px}}
+
+/* material */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+.box h3{margin:0 0 8px;font-size:20px;letter-spacing:-.015em}
+.box p,.box li{color:var(--muted);font-size:15.5px}
+.box ul{padding-left:18px;margin:8px 0 0}
+blockquote{margin:12px 0 0;padding:12px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;font-size:14.5px;color:var(--text)}
+blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:12.5px;color:var(--muted)}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0 22px;margin-top:10px}
+summary{cursor:pointer;min-height:58px;display:flex;align-items:center;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";margin-left:auto;color:var(--accent);font-size:20px}
+details[open] summary::after{content:"－"}
+details ol,details ul{padding-left:20px;color:var(--muted);font-size:14.5px;margin-top:0}
+details li{margin:6px 0;word-break:break-word}
+footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,5,10,.92);display:none;align-items:center;justify-content:center;padding:56px 12px}
+.lb.open{display:flex}
+.lb img{max-width:min(1000px,100%);max-height:100%;object-fit:contain;border-radius:14px;background:#fff}
+.lb button{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;width:52px;height:52px;border-radius:50%;font-size:24px;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.22)}
+.lb .x{top:12px;right:12px}
+.lb .lp{left:12px;top:50%;transform:translateY(-50%)}
+.lb .ln{right:12px;top:50%;transform:translateY(-50%)}
+.lb .cnt{position:absolute;top:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;opacity:.85}
+.lb .cap{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;opacity:.85;text-align:center;width:90%}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow fade">Подушки · Бразилия</span>
+  <h1 class="fade d1">Какую цервикальную подушку взять</h1>
+  <p class="lead fade d2">Theva Latexlux Cervical, Duoflex Natural Látex Cervical LN2100 и I Wanna Sleep Coluna Relax — характеристики с сайтов производителей, цены в проверенных магазинах, плюсы, минусы и как каждая сядет в вашу наволочку enVy COPPER Queen 50,8 × 76,2 см.</p>
+  <div class="meta fade d3">
+    <span class="chip">Цены проверены <b>12.11.2026</b></span>
+    <span class="chip">Курс ЦБ Бразилии (PTAX, продажа) на 11.11.2026: <b>$1 = R$ 5,5606</b></span>
+    <span class="chip"><span class="ok">●</span> проверено мной · <span class="unv">●</span> не удалось проверить</span>
+  </div>
+
+  <div class="verdict">
+    <div class="v best fade d2">
+      <div class="tag">Лучший баланс</div>
+      <h3>Duoflex Natural Látex Cervical LN2100</h3>
+      <p>Натуральный латекс, съёмный хлопковый чехол на молнии, гарантия 2 года — и самая низкая цена среди латексных.</p>
+      <div class="price">от <b>$46,22</b> <span style="color:var(--muted)">(R$ 257)</span></div>
+      <a class="jump" href="#duoflex">Подробнее →</a>
+    </div>
+    <div class="v alt fade d3">
+      <div class="tag">Если нужен «100% латекс»</div>
+      <h3>Theva Latexlux Cervical</h3>
+      <p>Производитель прямо пишет «100% натуральный латекс», есть массажный рельеф. Но дороже, чехол несъёмный, гарантия 3 месяца.</p>
+      <div class="price">от <b>$71,22</b> <span style="color:var(--muted)">(R$ 396, Pix)</span></div>
+      <a class="jump" href="#theva">Подробнее →</a>
+    </div>
+    <div class="v budget fade d4">
+      <div class="tag">Самая дешёвая</div>
+      <h3>I Wanna Sleep Coluna Relax</h3>
+      <p>Пена с памятью формы + уголь, тысячи отзывов. Но такая пена держит тепло, наполнитель не стирается, а сама подушка 60 × 35 см — меньше вашей наволочки.</p>
+      <div class="price">от <b>$37,23</b> <span style="color:var(--muted)">(R$ 207)</span></div>
+      <a class="jump" href="#coluna">Подробнее →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="models" style="padding-top:20px">
+  <h2 class="fade">Три модели подробно</h2>
+  <p class="sub fade d1">Нажмите на фото, чтобы увеличить. Характеристики — с официальных страниц производителей и карточек магазинов (ссылки ниже и в разделе «Источники»).</p>
+
+  <!-- DUOFLEX -->
+  <article class="product fade" id="duoflex">
+    <div class="pgrid">
+      <div class="gallery" data-gallery data-title="Duoflex Natural Látex Cervical LN2100">
+        <div class="stage">
+          <div class="slides">
+            <button type="button"><img src="img/duo-2.png" alt="Подушка Duoflex Natural Látex Cervical без упаковки" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/duo-1.png" alt="Duoflex Natural Látex Cervical LN2100 в фирменной упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/duo-4.webp" alt="Структура латексной пены Duoflex" referrerpolicy="no-referrer" loading="lazy"></button>
+          </div>
+          <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <button class="nav next" type="button" aria-label="Следующее фото">›</button>
+          <span class="zoomhint">⤢ увеличить</span>
+        </div>
+        <div class="thumbs"></div>
+      </div>
+      <div class="pbody">
+        <span class="rank r1">★ Рекомендую в первую очередь</span>
+        <h3>Duoflex Natural Látex Cervical LN2100</h3>
+        <p class="brandline">Анатомическая цервикальная подушка из натуральной латексной пены</p>
+        <ul class="specs">
+          <li><span>Материал</span>Натуральная латексная пена (процент латекса не указан)</li>
+          <li><span>Высота</span>12,5 см (высокий валик) · 9 см (центр) · 11 см (низкий валик)</li>
+          <li><span>Размер</span>Под наволочку 50 × 70 см; упаковка 61 × 41 × 14 см</li>
+          <li><span>Чехол</span>Перкаль 200 нитей, 100% хлопок, на молнии</li>
+          <li><span>Мягкость</span>Мягкая (Colchãoweb: «Macio»)</li>
+          <li><span>Поза сна</span>На боку или на спине</li>
+          <li><span>Гарантия</span>2 года</li>
+          <li><span>Отзывы</span>Amazon.com.br: 4,0 / 5 (60 оценок)</li>
+        </ul>
+        <div class="pc">
+          <div class="plus"><h4>Плюсы</h4><ul>
+            <li>Самая длинная гарантия из трёх — 2 года</li>
+            <li>Чехол на молнии, подушка моющаяся («lavável»)</li>
+            <li>Два валика разной высоты — можно развернуть под себя</li>
+            <li>Антиклещевая, антигрибковая обработка, стерилизация каждой подушки</li>
+            <li>Самая дешёвая из латексных: от $46,22</li>
+          </ul></div>
+          <div class="minus"><h4>Минусы</h4><ul>
+            <li>Не указано, 100% ли латекс</li>
+            <li>По сводке отзывов на Mercado Livre — «мягче, чем ожидали», жалобы на запах</li>
+            <li>Рейтинг на Amazon скромнее — 4,0 / 5</li>
+            <li>Магазины расходятся в описании ткани чехла (хлопок у производителя, бамбуковая вискоза у Cirúrgica Santista)</li>
+          </ul></div>
+        </div>
+        <div class="buy">
+          <h4>Где купить</h4>
+          <div class="shops">
+            <a class="shop" href="https://www.cirurgicasantista.com.br/produto/75/travesseiro-duoflex-natural-latex-cervical---branco---50-x-70-cm---ln2100" target="_blank" rel="noopener">
+              <span class="n">Cirúrgica Santista <small><span class="ok">●</span> в наличии · до 3 платежей без процентов</small></span>
+              <span class="p">$46,22<small>R$ 257,00</small></span></a>
+            <a class="shop" href="https://www.amazon.com.br/dp/B0B9T7P6QQ" target="_blank" rel="noopener">
+              <span class="n">Amazon.com.br <small><span class="ok">●</span> осталось 4 шт. · 4,0 / 5 (60)</small></span>
+              <span class="p">$47,80<small>R$ 265,81</small></span></a>
+            <a class="shop" href="https://www.mercadolivre.com.br/travesseiro-natural-latex-cervical-duoflex/p/MLB23586723" target="_blank" rel="noopener">
+              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка, сайт не пустил проверку</small></span>
+              <span class="p">$52,14–57,19<small>R$ 289,94–317,99</small></span></a>
+            <a class="shop" href="https://www.colchaoweb.com.br/travesseiros/travesseiro-duoflex-natural-latex-cervical-50-x-70-cm" target="_blank" rel="noopener">
+              <span class="n">Colchãoweb <small><span class="ok">●</span> в наличии · R$ 385 картой ($69,24)</small></span>
+              <span class="p">$64,39<small>R$ 358,05 Pix</small></span></a>
+            <a class="shop" href="https://www.duoflex.com.br/travesseiros/travesseiro-natural-latex/natural-latex-cervical/" target="_blank" rel="noopener">
+              <span class="n">Официальный сайт Duoflex <small>характеристики, цены нет</small></span>
+              <span class="p">—</span></a>
+          </div>
+          <p class="note">Enxovais Monte Santo (R$ 369,90 ≈ $66,52 в вашем списке): на главной странице магазина Duoflex не нашёлся, раздел подушек не открылся (сайт ограничил запросы) — наличие не подтверждено.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- THEVA -->
+  <article class="product fade" id="theva">
+    <div class="pgrid">
+      <div class="gallery" data-gallery data-title="Theva Latexlux Cervical">
+        <div class="stage">
+          <div class="slides">
+            <button type="button"><img src="img/theva-3.png" alt="Подушка Theva Latexlux Cervical без чехла — латекс с массажными выступами" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/theva-2.jpg" alt="Theva Latexlux Cervical в чехле из бамбуковой вискозы" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/theva-1.jpg" alt="Theva Latexlux Cervical в фирменной упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/theva-4.jpg" alt="Структура латекса Theva крупным планом" referrerpolicy="no-referrer" loading="lazy"></button>
+          </div>
+          <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <button class="nav next" type="button" aria-label="Следующее фото">›</button>
+          <span class="zoomhint">⤢ увеличить</span>
+        </div>
+        <div class="thumbs"></div>
+      </div>
+      <div class="pbody">
+        <span class="rank r2">Альтернатива</span>
+        <h3>Theva Latexlux Cervical</h3>
+        <p class="brandline">«Travesseiro Cervical 100% látex natural» — так её называет производитель</p>
+        <ul class="specs">
+          <li><span>Материал</span>100% натуральный латекс (по заявлению Theva)</li>
+          <li><span>Высота</span>10–12 см</li>
+          <li><span>Размер</span>Под наволочку 50 × 70 см; размеры самой подушки не указаны</li>
+          <li><span>Чехол</span>Фиксированный (несъёмный), бамбуковая вискоза</li>
+          <li><span>Мягкость</span>«Мягкая и упругая» (macia e resiliente)</li>
+          <li><span>Особенность</span>Массажные выступы («gomos massageadores»)</li>
+          <li><span>Гарантия</span>3 месяца (карточка Mega Colchões)</li>
+          <li><span>Отзывы</span>Проверенных данных нет — Mercado Livre не открылся</li>
+        </ul>
+        <div class="pc">
+          <div class="plus"><h4>Плюсы</h4><ul>
+            <li>Единственная, где производитель прямо пишет «100% натуральный латекс»</li>
+            <li>Рельеф с массажными выступами</li>
+            <li>Антиклещевая, моющаяся («lavável»)</li>
+            <li>Бамбуковая вискоза — производитель обещает прохладу</li>
+          </ul></div>
+          <div class="minus"><h4>Минусы</h4><ul>
+            <li>Самая дорогая: в проверенных магазинах от $71,22</li>
+            <li>Чехол несъёмный — стирать придётся всю подушку</li>
+            <li>Гарантия всего 3 месяца против 2 лет у Duoflex</li>
+            <li>Позу сна и жёсткость производитель не указывает</li>
+          </ul></div>
+        </div>
+        <div class="buy">
+          <h4>Где купить</h4>
+          <div class="shops">
+            <a class="shop" href="https://www.casadomedico.com.br/produto/travesseiro-cervical-latex-latexlux/" target="_blank" rel="noopener">
+              <span class="n">Casa do Médico <small><span class="unv">●</span> из вашего списка, сайт не пустил проверку</small></span>
+              <span class="p">$55,91<small>R$ 310,90</small></span></a>
+            <a class="shop" href="https://lista.mercadolivre.com.br/travesseiro-latexlux-cervical" target="_blank" rel="noopener">
+              <span class="n">Mercado Livre <small><span class="unv">●</span> по поисковой выдаче — «от R$ 308,45»</small></span>
+              <span class="p">от $55,47<small>R$ 308,45</small></span></a>
+            <a class="shop" href="https://www.megacolchoes.com.br/travesseiro-theva-latexlux-cervical-50x70" target="_blank" rel="noopener">
+              <span class="n">Mega Colchões <small><span class="ok">●</span> в наличии · R$ 440 картой до 12× ($79,13)</small></span>
+              <span class="p">$71,22<small>R$ 396,00 Pix</small></span></a>
+            <a class="shop" href="https://www.novasaude.com.br/almofadas-e-travesseiros/travesseiro-cervical-latexlux" target="_blank" rel="noopener">
+              <span class="n">Nova Saúde <small><span class="ok">●</span> до 12 платежей без процентов</small></span>
+              <span class="p">$76,23<small>R$ 423,90</small></span></a>
+            <a class="shop" href="https://www.multiclasse.com.br/travesseiro-theva-latexlux-cervical-50x70.html" target="_blank" rel="noopener">
+              <span class="n">Multiclasse <small><span class="unv">●</span> из вашего списка, сайт ограничил запросы</small></span>
+              <span class="p">$79,09<small>R$ 439,78</small></span></a>
+            <a class="shop" href="https://www.theva.com.br/travesseiros/travesseiro-latexlux-cervical/" target="_blank" rel="noopener">
+              <span class="n">Официальный сайт Theva <small>характеристики и видео, цены нет</small></span>
+              <span class="p">—</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- COLUNA RELAX -->
+  <article class="product fade" id="coluna">
+    <div class="pgrid">
+      <div class="gallery" data-gallery data-title="I Wanna Sleep Coluna Relax">
+        <div class="stage">
+          <div class="slides">
+            <button type="button"><img src="img/iws-1.jpg" alt="Подушка I Wanna Sleep Coluna Relax" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/iws-2.jpg" alt="Coluna Relax — анатомический профиль" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/iws-3.jpg" alt="Coluna Relax в упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+          </div>
+          <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <button class="nav next" type="button" aria-label="Следующее фото">›</button>
+          <span class="zoomhint">⤢ увеличить</span>
+        </div>
+        <div class="thumbs"></div>
+      </div>
+      <div class="pbody">
+        <span class="rank r3">Бюджетный вариант</span>
+        <h3>I Wanna Sleep Coluna Relax</h3>
+        <p class="brandline">Travesseiro Cervical Coluna Relax® — NASA-пена с активированным углём</p>
+        <ul class="specs">
+          <li><span>Материал</span>NASA-пена (вязкоупругая, с памятью формы) + активированный уголь</li>
+          <li><span>Высота</span>9–11 см по анатомическому профилю</li>
+          <li><span>Размер</span>60 × 35 × 11 см, в комплекте чехол 50 × 70 см</li>
+          <li><span>Чехол</span>Съёмный; стирка вручную или в деликатном режиме</li>
+          <li><span>Уход</span>Сам наполнитель стирать нельзя</li>
+          <li><span>Поза сна</span>На спине или на боку; от 13 лет</li>
+          <li><span>Гарантия</span>На проверенных страницах не указана</li>
+          <li><span>Отзывы</span>Mercado Livre: 4,7 / 5, ~9 тыс. оценок (по поисковой выдаче)</li>
+        </ul>
+        <div class="pc">
+          <div class="plus"><h4>Плюсы</h4><ul>
+            <li>Самая дешёвая: от $37,23</li>
+            <li>Очень много отзывов при высокой оценке</li>
+            <li>Анатомический изгиб под шею: высота меняется от 9 до 11 см</li>
+            <li>Съёмный чехол в комплекте</li>
+          </ul></div>
+          <div class="minus"><h4>Минусы</h4><ul>
+            <li>Пена с памятью формы удерживает тепло сильнее латекса (см. ниже) — важно в жарком климате</li>
+            <li>Наполнитель не стирается</li>
+            <li>60 × 35 см — заметно меньше наволочки 50,8 × 76,2 см</li>
+            <li>В отзывах на Mercado Livre (по поисковой выдаче) есть жалобы «слишком жёсткая», «быстро пачкается»</li>
+          </ul></div>
+        </div>
+        <div class="buy">
+          <h4>Где купить</h4>
+          <div class="shops">
+            <a class="shop" href="https://www.iwannasleep.com.br/products/travesseiro-cervical-coluna-relax-1" target="_blank" rel="noopener">
+              <span class="n">Официальный магазин I Wanna Sleep <small><span class="ok">●</span> акция −20%, обычная цена R$ 259 ($46,58)</small></span>
+              <span class="p">$37,23<small>R$ 207,00</small></span></a>
+            <a class="shop" href="https://www.catran.com.br/acessorios/travesseiros/travesseiro-60x35cm-cervical-coluna-relax-iws-i-wanna-sleep.html?codbar=317471254017" target="_blank" rel="noopener">
+              <span class="n">Catran <small><span class="ok">●</span> в наличии · R$ 227,90 картой ($40,98)</small></span>
+              <span class="p">$38,93<small>R$ 216,50 Pix/boleto</small></span></a>
+            <a class="shop" href="https://www.mercadolivre.com.br/travesseiro-cervical-nasa-coluna-relax-carvao-ativado-cor-branco-e-cinza/p/MLB29553039" target="_blank" rel="noopener">
+              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка; бесплатная доставка по Бразилии — по вашим данным</small></span>
+              <span class="p">$40,82<small>R$ 227,00</small></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ TABLE ============ -->
+<section id="table">
+  <h2 class="fade">Сравнение в одной таблице</h2>
+  <p class="sub fade d1">Зелёным отмечен лучший вариант в строке. На телефоне таблицу можно листать вбок.</p>
+  <div class="tablewrap fade d2">
+    <table>
+      <thead><tr><th></th><th>Duoflex LN2100</th><th>Theva Latexlux</th><th>Coluna Relax</th></tr></thead>
+      <tbody>
+        <tr><th>Цена от (проверено)</th><td>$46,22 · R$ 257</td><td>$71,22 · R$ 396</td><td class="win">$37,23 · R$ 207</td></tr>
+        <tr><th>Материал</th><td>Натуральная латексная пена</td><td class="win">100% натуральный латекс</td><td>NASA-пена + уголь</td></tr>
+        <tr><th>Высота</th><td>12,5 / 9 / 11 см</td><td>10–12 см</td><td>9–11 см</td></tr>
+        <tr><th>Размер</th><td>Под наволочку 50 × 70</td><td>Под наволочку 50 × 70</td><td>60 × 35 см</td></tr>
+        <tr><th>Чехол</th><td class="win">Хлопок 200 нитей, на молнии</td><td>Несъёмный, бамбуковая вискоза</td><td>Съёмный, в комплекте</td></tr>
+        <tr><th>Стирка</th><td class="win">Моющаяся</td><td class="win">Моющаяся</td><td>Только чехол</td></tr>
+        <tr><th>Тепло</th><td class="win">Латекс — нейтральнее</td><td class="win">Латекс — нейтральнее</td><td>Пена с памятью — теплее</td></tr>
+        <tr><th>Поза сна</th><td>Бок, спина</td><td>Не указана</td><td>Спина, бок</td></tr>
+        <tr><th>Гарантия</th><td class="win">2 года</td><td>3 месяца</td><td>Не указана</td></tr>
+        <tr><th>Отзывы</th><td>Amazon 4,0 (60)</td><td>Нет проверенных</td><td class="win">ML 4,7 (~9 тыс.)*</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">* По поисковой выдаче; в вашем списке — 4,7 по 7 787 отзывам. Цифры меняются со временем, Mercado Livre напрямую не открылся.</p>
+</section>
+
+<!-- ============ FIT ============ -->
+<section id="fit">
+  <div class="h2row">
+    <div>
+      <h2 class="fade">Как сядут в вашу наволочку</h2>
+      <p class="sub fade d1" style="margin-bottom:0">enVy COPPER Queen — 50,8 × 76,2 см. Схемы примерные: размеры самих латексных подушек производители не указывают.</p>
+    </div>
+    <img class="sticker" id="sticker" src="img/cat.jpg" alt="Милый котик спит клубком на подушке" width="118" height="93">
+  </div>
+  <div class="fit" style="margin-top:22px">
+    <div class="fitcard fade">
+      <h4>Duoflex LN2100</h4>
+      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:80%;height:78%">≈ под 70 × 50</div></div>
+      <p>По ширине совпадает, по длине останется ~6 см ткани (или больше). Упаковка 61 × 41 см, значит сама подушка, скорее всего, не больше — это оценка, не данные производителя.</p>
+    </div>
+    <div class="fitcard fade d1">
+      <h4>Theva Latexlux</h4>
+      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:80%;height:78%">≈ под 70 × 50</div></div>
+      <p>Та же картина: рассчитана на наволочку 50 × 70, свободная ткань по длине будет. Чехол у неё несъёмный, так что наволочка enVy пойдёт поверх него.</p>
+    </div>
+    <div class="fitcard fade d2">
+      <h4>Coluna Relax</h4>
+      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:79%;height:55%">60 × 35</div></div>
+      <p>Подушка ~на 16 см короче и ~на 16 см уже наволочки — будет ездить внутри. Удобнее пользоваться её родным чехлом 50 × 70 из комплекта.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATERIAL ============ -->
+<section id="material">
+  <h2 class="fade">Латекс или пена с памятью формы</h2>
+  <p class="sub fade d1">Главное различие между двумя латексными подушками и Coluna Relax — материал.</p>
+  <div class="two">
+    <div class="box fade">
+      <h3>Натуральный латекс</h3>
+      <p>Упругий, быстро возвращает форму, меньше «обволакивает». Держит температуру нейтральнее.</p>
+      <ul><li>Если есть аллергия на латекс — эти две модели лучше не брать без консультации аллерголога.</li></ul>
+      <blockquote>«Memory foam tends to absorb and trap body heat, while latex does a better job of remaining at a neutral temperature.»<cite>Sleep Foundation — сравнение материалов (на примере матрасов)</cite></blockquote>
+    </div>
+    <div class="box fade d1">
+      <h3>NASA-пена (вязкоупругая)</h3>
+      <p>Медленно продавливается под теплом тела и «обнимает» шею, затем медленно восстанавливается. Не содержит латекса.</p>
+      <ul><li>Если вам обычно жарко во сне, это аргумент против Coluna Relax.</li></ul>
+      <blockquote>«Memory foam reacts to body heat, becoming softer and more conforming… The biggest downside to memory foam is that it tends to trap body heat.»<cite>Sleep Foundation</cite></blockquote>
+    </div>
+  </div>
+  <p class="note">Подушки не заменяют консультацию врача: если вы выбираете подушку из-за боли в шее, высоту лучше подобрать с ортопедом или физиотерапевтом.</p>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+  <h2 class="fade">Источники и проверка</h2>
+  <details>
+    <summary>Откуда данные и что не удалось проверить</summary>
+    <ol>
+      <li>Theva, официальная страница: <a href="https://www.theva.com.br/travesseiros/travesseiro-latexlux-cervical/" target="_blank" rel="noopener">theva.com.br</a> — «100% látex natural», высота 10–12 см, наволочка 50 × 70, «capa fixa em viscose de bambu», «lavável», «antiácaros».</li>
+      <li>Duoflex, официальная страница: <a href="https://www.duoflex.com.br/travesseiros/travesseiro-natural-latex/natural-latex-cervical/" target="_blank" rel="noopener">duoflex.com.br</a> — LN2100, «Altura 12,5cm x 9cm x 11cm», «Capa percal 200 fios 100% algodão com zíper», «2 anos de garantia».</li>
+      <li>Colchãoweb — «Nível de conforto: Macio», «dorme de lado ou de costas», цена R$ 385 / R$ 358,05 Pix.</li>
+      <li>Cirúrgica Santista — R$ 257, в наличии, упаковка 61 × 41 × 14 см.</li>
+      <li>Amazon.com.br (B0B9T7P6QQ) — R$ 265,81, 4,0 / 5 по 60 оценкам, «Somente 4 em estoque».</li>
+      <li>Mega Colchões — Theva R$ 396 Pix / R$ 440, «Garantia 3 meses», в наличии. Nova Saúde — R$ 423,90.</li>
+      <li>Catran — Coluna Relax 60 × 35 × 11 см, высота 9–11 см, «Espuma Nasa», уголь, чехол 50 × 70, наполнитель не стирается, R$ 216,50 / R$ 227,90.</li>
+      <li>I Wanna Sleep, главная страница магазина — «Preço normal R$ 259, Preço promocional R$ 207».</li>
+      <li>Курс: <a href="https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='11-01-2026'&amp;@dataFinalCotacao='11-12-2026'&amp;$format=json" target="_blank" rel="noopener">API ЦБ Бразилии (PTAX)</a> — продажа 5,5606 на 11.11.2026. Пересчёт: цена в R$ ÷ 5,5606.</li>
+      <li>Материалы: <a href="https://www.sleepfoundation.org/mattress-information/what-is-the-difference-between-memory-foam-and-latex" target="_blank" rel="noopener">Sleep Foundation — Memory Foam vs. Latex</a>.</li>
+      <li><b>Не удалось проверить:</b> Mercado Livre, Casa do Médico, Multiclasse и Enxovais Monte Santo блокируют автоматический доступ (403/429). Их цены и рейтинги взяты из вашего списка или поисковой выдачи и помечены жёлтой точкой — уточните на месте перед покупкой.</li>
+    </ol>
+    <ul>
+      <li>Фото подушек — с официальных сайтов Theva, Duoflex, I Wanna Sleep и магазинов Cirúrgica Santista, Catran.</li>
+      <li>Стикер: «<a href="https://commons.wikimedia.org/wiki/File:Cat_sleeping_on_Pillow.jpg" target="_blank" rel="noopener">Cat sleeping on Pillow</a>», автор Rainebgone, CC BY-SA 4.0, Wikimedia Commons (обрезано).</li>
+    </ul>
+  </details>
+</section>
+
+<footer>Страница для личного пользования · цены на 12.11.2026 могут измениться</footer>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <span class="cnt" id="lbCnt"></span>
+  <img id="lbImg" alt="">
+  <span class="cap" id="lbCap"></span>
+  <button class="x" type="button" id="lbX" aria-label="Закрыть">✕</button>
+  <button class="lp" type="button" id="lbP" aria-label="Предыдущее фото">‹</button>
+  <button class="ln" type="button" id="lbN" aria-label="Следующее фото">›</button>
+</div>
+
+<script>
+(function(){
+  // broken image guard
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('error',function(){ img.style.opacity='.25'; img.alt='Фото не загрузилось'; });
+  });
+
+  // galleries
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lbCnt=document.getElementById('lbCnt'), lbCap=document.getElementById('lbCap');
+  var cur={imgs:[],i:0,title:''};
+  function showLb(){ var im=cur.imgs[cur.i]; lbImg.src=im.src; lbImg.alt=im.alt; lbCnt.textContent=(cur.i+1)+' / '+cur.imgs.length; lbCap.textContent=cur.title; }
+  function openLb(imgs,i,title){ cur={imgs:imgs,i:i,title:title}; showLb(); lb.classList.add('open'); document.body.style.overflow='hidden'; document.getElementById('lbX').focus(); }
+  function closeLb(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+  function step(d){ cur.i=(cur.i+d+cur.imgs.length)%cur.imgs.length; showLb(); }
+  document.getElementById('lbX').onclick=closeLb;
+  document.getElementById('lbP').onclick=function(e){e.stopPropagation();step(-1)};
+  document.getElementById('lbN').onclick=function(e){e.stopPropagation();step(1)};
+  lb.addEventListener('click',function(e){ if(e.target===lb) closeLb(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') closeLb(); else if(e.key==='ArrowLeft') step(-1); else if(e.key==='ArrowRight') step(1);
+  });
+
+  document.querySelectorAll('[data-gallery]').forEach(function(g){
+    var slides=g.querySelector('.slides'), btns=[].slice.call(slides.querySelectorAll('button')), imgs=btns.map(function(b){return b.querySelector('img')});
+    var thumbs=g.querySelector('.thumbs'), title=g.getAttribute('data-title');
+    imgs.forEach(function(im,i){
+      var t=document.createElement('button'); t.type='button'; t.setAttribute('aria-label','Фото '+(i+1));
+      var ti=document.createElement('img'); ti.src=im.getAttribute('src'); ti.alt=''; ti.referrerPolicy='no-referrer'; ti.loading='lazy';
+      t.appendChild(ti); t.onclick=function(){ go(i); }; thumbs.appendChild(t);
+      btns[i].onclick=function(){ openLb(imgs,i,title); };
+    });
+    var tb=[].slice.call(thumbs.children);
+    function idx(){ return Math.round(slides.scrollLeft/slides.clientWidth)||0; }
+    function mark(){ var k=idx(); tb.forEach(function(t,j){ t.setAttribute('aria-current', j===k?'true':'false'); }); }
+    function go(i){ i=(i+imgs.length)%imgs.length; slides.scrollTo({left:i*slides.clientWidth,behavior:'smooth'}); }
+    g.querySelector('.prev').onclick=function(){ go(idx()-1); };
+    g.querySelector('.next').onclick=function(){ go(idx()+1); };
+    slides.addEventListener('scroll',function(){ window.requestAnimationFrame(mark); },{passive:true});
+    mark();
+  });
+})();
+</script>
+<script type="module">
+(async () => {
+  try {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const { animate } = await import("https://cdn.jsdelivr.net/npm/motion@11.18.2/+esm");
+    const hov = (el, s) => {
+      el.addEventListener('pointerenter', () => animate(el, { scale: s }, { duration: 0.25 }));
+      el.addEventListener('pointerleave', () => animate(el, { scale: 1 }, { duration: 0.25 }));
+      el.addEventListener('pointerdown', () => animate(el, { scale: 0.98 }, { duration: 0.12 }));
+      el.addEventListener('pointerup', () => animate(el, { scale: s }, { duration: 0.18 }));
+    };
+    document.querySelectorAll('.shop, .v').forEach(el => hov(el, 1.012));
+    const st = document.getElementById('sticker');
+    if (st) {
+      const wiggle = () => animate(st, { rotate: [5, -6, 8, -3, 5] }, { duration: 0.8 });
+      st.addEventListener('pointerenter', wiggle);
+      st.addEventListener('click', wiggle);
+    }
+  } catch (e) { /* анимации необязательны */ }
+})();
+</script>
+</body>
+</html>
