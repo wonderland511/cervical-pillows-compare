@@ -54,7 +54,8 @@ h1{font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.03em;margin:
 
 /* verdict */
 .verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 8px}
-@media (max-width:860px){.verdict{grid-template-columns:1fr}}
+.verdict.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:860px){.verdict,.verdict.two{grid-template-columns:1fr}}
 .v{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow);position:relative}
 .v .tag{font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .v.best{border-color:color-mix(in srgb,var(--good) 45%,var(--line))}
@@ -129,7 +130,8 @@ td.win{background:var(--good-soft)}
 
 /* fit */
 .fit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media (max-width:860px){.fit{grid-template-columns:1fr}}
+.fit.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:860px){.fit,.fit.two{grid-template-columns:1fr}}
 .fitcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
 .fitcard h4{margin:0 0 10px;font-size:17px}
 .case{position:relative;height:140px;padding:26px 8px 8px;border-radius:14px;border:2px dashed var(--faint);margin:6px 0 12px;display:grid;place-items:center}
@@ -178,7 +180,7 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
 <header class="hero">
   <span class="eyebrow fade">Подушки · Бразилия</span>
   <h1 class="fade d1">Какую цервикальную подушку взять</h1>
-  <p class="lead fade d2">Duoflex Natural Látex Cervical LN2100, Reconflex Látex Natural Cervical Relax (вместо Theva Latexlux) и I Wanna Sleep Coluna Relax — характеристики с сайтов производителей, цены в проверенных магазинах, плюсы, минусы и как каждая сядет в вашу наволочку enVy COPPER Queen 50,8 × 76,2 см. Критерии — <b style="color:var(--text)">средняя или высокая жёсткость, качественный материал и покупка в Рио</b>.</p>
+  <p class="lead fade d2">Reconflex Látex Natural Cervical Relax, Duoflex NASA Cervical NN2100 и NAP NASA Ortopédico Cervical D40 — характеристики с сайтов производителей, цены в проверенных магазинах, плюсы, минусы и как каждая сядет в вашу наволочку enVy COPPER Queen 50,8 × 76,2 см. Критерии — <b style="color:var(--text)">средняя или высокая жёсткость, качественный материал и покупка в Рио</b>.</p>
   <div class="meta fade d3">
     <span class="chip">Цены проверены <b>12.11.2026</b></span>
     <span class="chip">Курс ЦБ Бразилии (PTAX, продажа) на 11.11.2026: <b>$1 = R$ 5,5606</b></span>
@@ -187,25 +189,25 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
 
   <div class="verdict">
     <div class="v best fade d2">
-      <div class="tag">Подходит: средняя жёсткость</div>
-      <h3>Duoflex Natural Látex Cervical LN2100</h3>
-      <p>Натуральный латекс, средняя жёсткость подтверждена производителем («Médio»). Плюс съёмный хлопковый чехол, гарантия 2 года, а доставка в Рио — R$ 30 за 6 рабочих дней.</p>
-      <div class="price">в Рио от <b>$62,99</b> <span style="color:var(--muted)">(R$ 350,25 с доставкой)</span></div>
-      <a class="jump" href="#duoflex">Подробнее →</a>
-    </div>
-    <div class="v alt fade d3">
-      <div class="tag">Подходит: жёсткая · вместо Theva</div>
+      <div class="tag">Подходит: жёсткая · натуральный латекс</div>
       <h3>Reconflex Látex Natural Cervical Relax</h3>
       <p>100% натуральный латекс и «Suporte Firme» по данным производителя, съёмный хлопковый чехол. Минус — доставка в Рио R$ 250 и 16 рабочих дней.</p>
       <div class="price">в Рио от <b>$108,08</b> <span style="color:var(--muted)">(R$ 601 с доставкой, Pix)</span></div>
       <a class="jump" href="#reconflex">Подробнее →</a>
     </div>
+    <div class="v budget fade d3">
+      <div class="tag">Дёшево и много отзывов · но мягкая</div>
+      <h3>Duoflex NASA Cervical NN2100</h3>
+      <p>4,6 по 756 отзывам на Amazon, гарантия 2 года, от $24,93. Но Duoflex сама относит её к мягким, а материал — синтетическая пена с памятью формы, которая держит тепло.</p>
+      <div class="price">от <b>$24,93</b> <span style="color:var(--muted)">(R$ 138,60, без доставки)</span></div>
+      <a class="jump" href="#nasa">Подробнее →</a>
+    </div>
     <div class="v budget fade d4">
-      <div class="tag">Жёсткость не указана</div>
-      <h3>I Wanna Sleep Coluna Relax</h3>
-      <p>Самая дешёвая, но жёсткость официально не указана, а материал — синтетическая пена. Под ваши критерии не подходит наверняка; оставлена для сравнения.</p>
-      <div class="price">от <b>$37,23</b> <span style="color:var(--muted)">(R$ 207)</span></div>
-      <a class="jump" href="#coluna">Подробнее →</a>
+      <div class="tag">Самая дешёвая · жёсткость не указана</div>
+      <h3>NAP NASA Ortopédico Cervical D40</h3>
+      <p>4,3 по 1 033 отзывам на Amazon, невысокая (12/10 см), лучше всех садится в вашу наволочку. Но жёсткость официально не указана, материал синтетический, гарантия 3 месяца.</p>
+      <div class="price">от <b>$13,32</b> <span style="color:var(--muted)">(R$ 74,08, без доставки)</span></div>
+      <a class="jump" href="#nap">Подробнее →</a>
     </div>
   </div>
 </header>
@@ -214,80 +216,6 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
 <section id="models" style="padding-top:20px">
   <h2 class="fade">Три модели подробно</h2>
   <p class="sub fade d1">Нажмите на фото, чтобы увеличить. Характеристики — с официальных страниц производителей и карточек магазинов (ссылки ниже и в разделе «Источники»).</p>
-
-  <!-- DUOFLEX -->
-  <article class="product fade" id="duoflex">
-    <div class="pgrid">
-      <div class="gallery" data-gallery data-title="Duoflex Natural Látex Cervical LN2100">
-        <div class="stage">
-          <div class="slides">
-            <button type="button"><img src="img/duo-2.png" alt="Подушка Duoflex Natural Látex Cervical без упаковки" referrerpolicy="no-referrer" loading="lazy"></button>
-            <button type="button"><img src="img/duo-1.png" alt="Duoflex Natural Látex Cervical LN2100 в фирменной упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
-            <button type="button"><img src="img/duo-4.webp" alt="Структура латексной пены Duoflex" referrerpolicy="no-referrer" loading="lazy"></button>
-          </div>
-          <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
-          <button class="nav next" type="button" aria-label="Следующее фото">›</button>
-          <span class="zoomhint">⤢ увеличить</span>
-        </div>
-        <div class="thumbs"></div>
-      </div>
-      <div class="pbody">
-        <span class="rank r1">★ Средняя жёсткость · рекомендую</span>
-        <h3>Duoflex Natural Látex Cervical LN2100</h3>
-        <p class="brandline">Анатомическая цервикальная подушка из натуральной латексной пены</p>
-        <ul class="specs">
-          <li><span>Материал</span>Натуральная латексная пена (процент латекса не указан)</li>
-          <li><span>Высота</span>12,5 см (высокий валик) · 9 см (центр) · 11 см (низкий валик)</li>
-          <li><span>Размер</span>Под наволочку 50 × 70 см; упаковка 61 × 41 × 14 см</li>
-          <li><span>Чехол</span>Перкаль 200 нитей, 100% хлопок, на молнии</li>
-          <li><span>Жёсткость</span><b>Средняя</b> — фильтр «Médio» на сайте Duoflex (Colchãoweb пишет «Macio»)</li>
-          <li><span>Поза сна</span>На боку или на спине</li>
-          <li><span>Гарантия</span>2 года</li>
-          <li><span>Отзывы</span>Amazon.com.br: 4,0 / 5 (60 оценок)</li>
-        </ul>
-        <div class="pc">
-          <div class="plus"><h4>Плюсы</h4><ul>
-            <li>Средняя жёсткость по классификации самого производителя</li>
-            <li>Самая длинная гарантия из трёх — 2 года</li>
-            <li>Чехол на молнии, подушка моющаяся («lavável»)</li>
-            <li>Два валика разной высоты — можно развернуть под себя</li>
-            <li>Антиклещевая, антигрибковая обработка, стерилизация каждой подушки</li>
-            <li>Самая дешёвая из латексных: от $46,22</li>
-          </ul></div>
-          <div class="minus"><h4>Минусы</h4><ul>
-            <li>Не указано, 100% ли латекс</li>
-            <li>Средняя, но ближе к мягкой стороне: Colchãoweb называет её «Macio», в отзывах на Mercado Livre (по сводке из поиска) — «мягче, чем ожидали»; есть жалобы на запах</li>
-            <li>Рейтинг на Amazon скромнее — 4,0 / 5</li>
-            <li>Магазины расходятся в описании ткани чехла (хлопок у производителя, бамбуковая вискоза у Cirúrgica Santista)</li>
-          </ul></div>
-        </div>
-        <div class="buy">
-          <h4>Где купить</h4>
-          <div class="shops">
-            <a class="shop" href="https://www.emporiodolencol.com.br/travesseiro-natural-latex-cervical-50-x-70---duoflex-02849/p" target="_blank" rel="noopener">
-              <span class="n">Empório do Lençol <small><span class="ok">●</span> в наличии · <b>доставка в Рио R$ 30,26 ($5,44), 6 раб. дней</b></small></span>
-              <span class="p">$57,55<small>R$ 319,99</small></span></a>
-            <a class="shop" href="https://www.cirurgicasantista.com.br/produto/75/travesseiro-duoflex-natural-latex-cervical---branco---50-x-70-cm---ln2100" target="_blank" rel="noopener">
-              <span class="n">Cirúrgica Santista <small><span class="ok">●</span> в наличии · до 3 платежей без процентов</small></span>
-              <span class="p">$46,22<small>R$ 257,00</small></span></a>
-            <a class="shop" href="https://www.amazon.com.br/dp/B0B9T7P6QQ" target="_blank" rel="noopener">
-              <span class="n">Amazon.com.br <small><span class="ok">●</span> осталось 4 шт. · 4,0 / 5 (60)</small></span>
-              <span class="p">$47,80<small>R$ 265,81</small></span></a>
-            <a class="shop" href="https://www.mercadolivre.com.br/travesseiro-natural-latex-cervical-duoflex/p/MLB23586723" target="_blank" rel="noopener">
-              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка, сайт не пустил проверку</small></span>
-              <span class="p">$52,14–57,19<small>R$ 289,94–317,99</small></span></a>
-            <a class="shop" href="https://www.colchaoweb.com.br/travesseiros/travesseiro-duoflex-natural-latex-cervical-50-x-70-cm" target="_blank" rel="noopener">
-              <span class="n">Colchãoweb <small><span class="ok">●</span> в наличии · R$ 385 картой ($69,24)</small></span>
-              <span class="p">$64,39<small>R$ 358,05 Pix</small></span></a>
-            <a class="shop" href="https://www.duoflex.com.br/travesseiros/travesseiro-natural-latex/natural-latex-cervical/" target="_blank" rel="noopener">
-              <span class="n">Официальный сайт Duoflex <small>характеристики, цены нет</small></span>
-              <span class="p">—</span></a>
-          </div>
-          <p class="note">Enxovais Monte Santo (R$ 369,90 ≈ $66,52 в вашем списке): на главной странице магазина Duoflex не нашёлся, раздел подушек не открылся (сайт ограничил запросы) — наличие не подтверждено.</p>
-        </div>
-      </div>
-    </div>
-  </article>
 
   <!-- RECONFLEX -->
   <article class="product fade" id="reconflex">
@@ -307,7 +235,7 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
         <div class="thumbs"></div>
       </div>
       <div class="pbody">
-        <span class="rank r2">Жёсткая · 100% натуральный латекс</span>
+        <span class="rank r1">★ Подходит под ваши критерии</span>
         <h3>Reconflex Látex Natural Cervical Relax</h3>
         <p class="brandline">Замена Theva Latexlux: анатомическая цервикальная подушка с «Suporte Firme»</p>
         <ul class="specs">
@@ -330,7 +258,7 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
           </ul></div>
           <div class="minus"><h4>Минусы</h4><ul>
             <li>Доставка в Рио дорогая и долгая: R$ 250 ($44,96), 16 рабочих дней</li>
-            <li>Итого с доставкой — самая дорогая: от $108,08</li>
+            <li>С доставкой в Рио выходит дорого: от $108,08</li>
             <li>Отзывов на сайте нет (0 оценок)</li>
             <li>Гарантия не указана; латекс не стирается</li>
             <li>60 × 40 см — меньше вашей наволочки</li>
@@ -349,15 +277,16 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
     </div>
   </article>
 
-  <!-- COLUNA RELAX -->
-  <article class="product fade" id="coluna">
+  <!-- NASA -->
+  <article class="product fade" id="nasa">
     <div class="pgrid">
-      <div class="gallery" data-gallery data-title="I Wanna Sleep Coluna Relax">
+      <div class="gallery" data-gallery data-title="Duoflex NASA Cervical NN2100">
         <div class="stage">
           <div class="slides">
-            <button type="button"><img src="img/iws-1.jpg" alt="Подушка I Wanna Sleep Coluna Relax" referrerpolicy="no-referrer" loading="lazy"></button>
-            <button type="button"><img src="img/iws-2.jpg" alt="Coluna Relax — анатомический профиль" referrerpolicy="no-referrer" loading="lazy"></button>
-            <button type="button"><img src="img/iws-3.jpg" alt="Coluna Relax в упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nasa-a.jpg" alt="Подушка Duoflex NASA Cervical — анатомический профиль с двумя валиками" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nasa-pack.jpg" alt="Duoflex NASA Cervical NN2100 в фирменной упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nasa-b.jpg" alt="Duoflex NASA Cervical в плюшевом чехле" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nasa-foam.jpg" alt="Вязкоупругая пена NASA сохраняет отпечаток руки" referrerpolicy="no-referrer" loading="lazy"></button>
           </div>
           <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
           <button class="nav next" type="button" aria-label="Следующее фото">›</button>
@@ -366,49 +295,115 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
         <div class="thumbs"></div>
       </div>
       <div class="pbody">
-        <span class="rank r3">Бюджетный вариант</span>
-        <h3>I Wanna Sleep Coluna Relax</h3>
-        <p class="brandline">Travesseiro Cervical Coluna Relax® — NASA-пена с активированным углём</p>
+        <span class="rank r3">Больше всего отзывов · но производитель: «мягкая»</span>
+        <h3>Duoflex NASA Cervical NN2100</h3>
+        <p class="brandline">Анатомическая подушка из вязкоупругой пены NASA (memory foam)</p>
         <ul class="specs">
-          <li><span>Материал</span>NASA-пена (вязкоупругая, с памятью формы) + активированный уголь</li>
-          <li><span>Высота</span>9–11 см по анатомическому профилю</li>
-          <li><span>Размер</span>60 × 35 × 11 см, в комплекте чехол 50 × 70 см</li>
-          <li><span>Чехол</span>Съёмный; стирка вручную или в деликатном режиме</li>
-          <li><span>Жёсткость</span>Официально не указана; в отзывах — от «мягкая» до «слишком жёсткая»</li>
-          <li><span>Уход</span>Сам наполнитель стирать нельзя</li>
-          <li><span>Поза сна</span>На спине или на боку; от 13 лет</li>
-          <li><span>Гарантия</span>На проверенных страницах не указана</li>
-          <li><span>Отзывы</span>Mercado Livre: 4,7 / 5, ~9 тыс. оценок (по поисковой выдаче)</li>
+          <li><span>Жёсткость</span><b>Мягкая</b> по классификации Duoflex («Macio»); в «Médio» и «Firme» её нет</li>
+          <li><span>Материал</span>Вязкоупругая пена NASA (полиуретан)</li>
+          <li><span>Высота</span>Валики 12,5 и 11 см, углубление 7,5 см</li>
+          <li><span>Размер</span>Под наволочку 50 × 70 см</li>
+          <li><span>Чехол</span>Плюш (хлопок и полиэстер), на молнии</li>
+          <li><span>Поза сна</span>На боку или на спине (по вашим данным)</li>
+          <li><span>Гарантия</span>2 года</li>
+          <li><span>Отзывы</span>Amazon.com.br: 4,6 / 5 (756 оценок)</li>
         </ul>
         <div class="pc">
           <div class="plus"><h4>Плюсы</h4><ul>
-            <li>Самая дешёвая: от $37,23</li>
-            <li>Очень много отзывов при высокой оценке</li>
-            <li>Анатомический изгиб под шею: высота меняется от 9 до 11 см</li>
-            <li>Съёмный чехол в комплекте</li>
-            <li>30 дней на пробу с кредитом на обмен в магазине бренда — можно проверить жёсткость на себе</li>
+            <li>Очень много отзывов при высокой оценке: 4,6 по 756 (Amazon)</li>
+            <li>Самая дешёвая: от $24,93</li>
+            <li>Гарантия 2 года, чехол снимается (на молнии)</li>
+            <li>Под стандартную наволочку 50 × 70</li>
           </ul></div>
           <div class="minus"><h4>Минусы</h4><ul>
-            <li>Жёсткость официально не указана — попадёт ли в «среднюю», неизвестно</li>
-            <li>Пена с памятью формы удерживает тепло сильнее латекса (см. ниже) — важно в жарком климате</li>
-            <li>Наполнитель не стирается</li>
-            <li>60 × 35 см — заметно меньше наволочки 50,8 × 76,2 см</li>
-            <li>В отзывах на Mercado Livre (по поисковой выдаче) есть жалобы «слишком жёсткая», «быстро пачкается»</li>
+            <li><b>Не подходит под ваш критерий жёсткости:</b> Duoflex сама относит её к мягким</li>
+            <li>Пена с памятью формы от тепла тела становится мягче и держит тепло (Sleep Foundation); плюшевый чехол тоже тёплый</li>
+            <li>Синтетика (полиуретан), а не натуральный материал</li>
+            <li>Доставку в Рио с Amazon проверить не удалось; у Empório do Lençol она стоит R$ 132,68</li>
           </ul></div>
         </div>
         <div class="buy">
           <h4>Где купить</h4>
           <div class="shops">
-            <a class="shop" href="https://www.iwannasleep.com.br/products/travesseiro-cervical-coluna-relax-1" target="_blank" rel="noopener">
-              <span class="n">Официальный магазин I Wanna Sleep <small><span class="ok">●</span> акция −20%, обычная цена R$ 259 ($46,58)</small></span>
-              <span class="p">$37,23<small>R$ 207,00</small></span></a>
-            <a class="shop" href="https://www.catran.com.br/acessorios/travesseiros/travesseiro-60x35cm-cervical-coluna-relax-iws-i-wanna-sleep.html?codbar=317471254017" target="_blank" rel="noopener">
-              <span class="n">Catran <small><span class="ok">●</span> в наличии · R$ 227,90 картой ($40,98)</small></span>
-              <span class="p">$38,93<small>R$ 216,50 Pix/boleto</small></span></a>
-            <a class="shop" href="https://www.mercadolivre.com.br/travesseiro-cervical-nasa-coluna-relax-carvao-ativado-cor-branco-e-cinza/p/MLB29553039" target="_blank" rel="noopener">
-              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка; бесплатная доставка по Бразилии — по вашим данным</small></span>
-              <span class="p">$40,82<small>R$ 227,00</small></span></a>
+            <a class="shop" href="https://www.amazon.com.br/dp/B07QY2HYKD" target="_blank" rel="noopener">
+              <span class="n">Amazon.com.br — NN2109 <small><span class="ok">●</span> в наличии · 4,6 / 5 (697) · те же характеристики, версия для интернет-магазинов</small></span>
+              <span class="p">$24,93<small>R$ 138,60</small></span></a>
+            <a class="shop" href="https://www.amazon.com.br/dp/B07D3MJXYY" target="_blank" rel="noopener">
+              <span class="n">Amazon.com.br — NN2100 <small><span class="ok">●</span> осталось 5 шт. · 4,6 / 5 (756)</small></span>
+              <span class="p">$25,61<small>R$ 142,40</small></span></a>
+            <a class="shop" href="https://www.mercadolivre.com.br/travesseiro-duoflex-nasa-cervical-visco-nn2100-50x70/p/MLB48679988" target="_blank" rel="noopener">
+              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка (4,6 по 633), сайт не пустил проверку</small></span>
+              <span class="p">от $30,55<small>R$ 169,90</small></span></a>
+            <a class="shop" href="https://www.emporiodolencol.com.br/travesseiro-nasa-cervical-antiacaro---duoflex-01322/p" target="_blank" rel="noopener">
+              <span class="n">Empório do Lençol <small><span class="ok">●</span> в наличии · доставка в Рио R$ 132,68 ($23,86), 6 раб. дней</small></span>
+              <span class="p">$35,07<small>R$ 194,99</small></span></a>
+            <a class="shop" href="https://www.duoflex.com.br/travesseiros/travesseiro-nasa/nasa-cervical/" target="_blank" rel="noopener">
+              <span class="n">Официальный сайт Duoflex <small>характеристики, цены нет</small></span>
+              <span class="p">—</span></a>
           </div>
+          <p class="note">Amazon доставляет по всей Бразилии, но стоимость и срок для вашего индекса покажет только корзина — я их не проверяла.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- NAP -->
+  <article class="product fade" id="nap">
+    <div class="pgrid">
+      <div class="gallery" data-gallery data-title="NAP NASA Ortopédico Cervical D40">
+        <div class="stage">
+          <div class="slides">
+            <button type="button"><img src="img/nap-1.jpg" alt="Подушка NAP NASA Ortopédico Cervical D40 — волнообразный анатомический профиль" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nap-2.jpg" alt="NAP Home Comfort Cervical в упаковке" referrerpolicy="no-referrer" loading="lazy"></button>
+            <button type="button"><img src="img/nap-4.jpg" alt="NAP NASA Cervical — поддержка шеи" referrerpolicy="no-referrer" loading="lazy"></button>
+          </div>
+          <button class="nav prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <button class="nav next" type="button" aria-label="Следующее фото">›</button>
+          <span class="zoomhint">⤢ увеличить</span>
+        </div>
+        <div class="thumbs"></div>
+      </div>
+      <div class="pbody">
+        <span class="rank r3">Самая дешёвая · жёсткость не указана</span>
+        <h3>NAP NASA Ortopédico Cervical D40</h3>
+        <p class="brandline">Цервикальная подушка из вязкоупругой пены плотностью D40; на Amazon продаётся под маркой Z Pass Sleep</p>
+        <ul class="specs">
+          <li><span>Жёсткость</span>Официально не указана. D40 — плотность пены, а не жёсткость</li>
+          <li><span>Материал</span>100% вязкоупругая пена NASA, D40 (полиуретан)</li>
+          <li><span>Высота</span>12 / 10 см (вариант «Médio»; есть «Alto» 14 / 10 см)</li>
+          <li><span>Размер</span>68 × 48 × 12 см (Amazon), под наволочку 50 × 70</li>
+          <li><span>Чехол</span>Махровый «Super Plush», съёмный, на молнии</li>
+          <li><span>Поза сна</span>На спине или на боку (по вашим данным)</li>
+          <li><span>Гарантия</span>3 месяца (Amazon)</li>
+          <li><span>Отзывы</span>Amazon.com.br: 4,3 / 5 (1 033 оценки)</li>
+        </ul>
+        <div class="pc">
+          <div class="plus"><h4>Плюсы</h4><ul>
+            <li>Самая дешёвая из трёх: от $13,32</li>
+            <li>Больше всего отзывов: 1 033 на Amazon</li>
+            <li>Не высокая — 12 / 10 см</li>
+            <li>Лучше всех садится в вашу наволочку: 68 × 48 см</li>
+          </ul></div>
+          <div class="minus"><h4>Минусы</h4><ul>
+            <li>Жёсткость не подтверждена: «твёрдая» — это из обзоров в вашем списке, производитель её не указывает</li>
+            <li>Синтетика (полиуретан); пена с памятью формы и махровый чехол держат тепло</li>
+            <li>Гарантия всего 3 месяца</li>
+            <li>Оценка ниже, чем у Duoflex NASA: 4,3 против 4,6</li>
+          </ul></div>
+        </div>
+        <div class="buy">
+          <h4>Где купить</h4>
+          <div class="shops">
+            <a class="shop" href="https://www.amazon.com.br/dp/B0BMXZ1GP8" target="_blank" rel="noopener">
+              <span class="n">Amazon.com.br (Z Pass Sleep, 12/10 см) <small><span class="ok">●</span> в наличии · продаёт и отправляет Amazon · 4,3 / 5 (1 033)</small></span>
+              <span class="p">$13,32<small>R$ 74,08</small></span></a>
+            <a class="shop" href="https://www.constamed.com.br/sono/travesseiros-terapeuticos-e-ortopedicos/travesseiro-ortopedico-nasa/travesseiro-nasa-ortopedico-cervical-densidade-40-medio" target="_blank" rel="noopener">
+              <span class="n">Constamed (марка NAP, «Densidade 40 – Médio») <small><span class="ok">●</span> в наличии</small></span>
+              <span class="p">$19,98<small>R$ 111,11</small></span></a>
+            <a class="shop" href="https://lista.mercadolivre.com.br/travesseiro-nasa-cervical-nap" target="_blank" rel="noopener">
+              <span class="n">Mercado Livre <small><span class="unv">●</span> из вашего списка, сайт не пустил проверку</small></span>
+              <span class="p">$15,29–24,28<small>R$ 85–135</small></span></a>
+          </div>
+          <p class="note">Карточка на Amazon в поисковой выдаче называлась «Nap…», а сейчас подписана «Z Pass Sleep»; размеры, D40 и высота 12/10 см совпадают с NAP у Constamed. Стоимость доставки в Рио у Amazon и Constamed я не проверяла.</p>
         </div>
       </div>
     </div>
@@ -418,28 +413,25 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
 <!-- ============ TABLE ============ -->
 <section id="table">
   <h2 class="fade">Сравнение в одной таблице</h2>
-  <p class="sub fade d1">Зелёным отмечен лучший вариант в строке. На телефоне таблицу можно листать вбок.</p>
+  <p class="sub fade d1">Зелёным отмечен лучший вариант в строке.</p>
   <div class="tablewrap fade d2">
     <table>
-      <thead><tr><th></th><th>Duoflex LN2100</th><th>Reconflex Cervical Relax</th><th>Coluna Relax</th></tr></thead>
+      <thead><tr><th></th><th>Reconflex Cervical Relax</th><th>Duoflex NASA Cervical NN2100</th><th>NAP NASA Cervical D40</th></tr></thead>
       <tbody>
-        <tr><th>Жёсткость</th><td class="win"><b>Средняя</b> («Médio», производитель)</td><td class="win"><b>Жёсткая</b> («Suporte Firme», производитель)</td><td>Не указана</td></tr>
-        <tr><th>Цена от (проверено)</th><td>$46,22 · R$ 257</td><td>$63,12 · R$ 351 Pix</td><td class="win">$37,23 · R$ 207</td></tr>
-        <tr><th>Доставка в Рио (проверено)</th><td class="win">R$ 30,26 · 6 раб. дней (Empório do Lençol)</td><td>R$ 250 · 16 раб. дней</td><td>Бесплатно на ML — по вашим данным, не проверено</td></tr>
-        <tr><th>Материал</th><td>Натуральная латексная пена</td><td class="win">100% натуральный латекс</td><td>NASA-пена + уголь</td></tr>
-        <tr><th>Высота</th><td>12,5 / 9 / 11 см</td><td>12 см (у края 10)</td><td>9–11 см</td></tr>
-        <tr><th>Размер</th><td>Под наволочку 50 × 70</td><td>60 × 40 см</td><td>60 × 35 см</td></tr>
-        <tr><th>Экологичность</th><td class="win">Натуральный латекс из сока гевеи, сделан в Бразилии; хлопковый чехол. Экосертификата на продукт нет</td><td class="win">Заявлен 100% натуральный латекс; хлопковый чехол. Экосертификата нет</td><td>Синтетика: полиуретановая пена. Экосертификатов не найдено</td></tr>
-        <tr><th>Чехол</th><td class="win">Хлопок 200 нитей, на молнии</td><td class="win">Хлопок, съёмный</td><td>Съёмный, в комплекте</td></tr>
-        <tr><th>Стирка</th><td class="win">Моющаяся</td><td>Только чехол</td><td>Только чехол</td></tr>
-        <tr><th>Тепло</th><td class="win">Латекс — нейтральнее</td><td class="win">Латекс — нейтральнее</td><td>Пена с памятью — теплее</td></tr>
+        <tr><th>Жёсткость</th><td class="win"><b>Жёсткая</b> («Suporte Firme», производитель)</td><td><b>Мягкая</b> («Macio», производитель)</td><td>Не указана (D40 — плотность)</td></tr>
+        <tr><th>Материал</th><td class="win">100% натуральный латекс (по заявлению)</td><td>Вязкоупругая пена NASA (полиуретан)</td><td>Вязкоупругая пена NASA D40 (полиуретан)</td></tr>
+        <tr><th>Цена</th><td>$63,12 · R$ 351 Pix</td><td>$24,93 · R$ 138,60 (Amazon)</td><td class="win">$13,32 · R$ 74,08 (Amazon)</td></tr>
+        <tr><th>Доставка в Рио</th><td>R$ 250 · 16 раб. дней (проверено)</td><td>Amazon — не проверено; Empório — R$ 132,68 · 6 раб. дней</td><td>Не проверено</td></tr>
+        <tr><th>Высота</th><td>12 см (у края 10)</td><td>12,5 / 7,5 / 11 см</td><td>12 / 10 см</td></tr>
+        <tr><th>Размер</th><td>60 × 40 см</td><td>Под наволочку 50 × 70</td><td class="win">68 × 48 см</td></tr>
+        <tr><th>Чехол</th><td class="win">Хлопок, съёмный</td><td>Плюш (хлопок + полиэстер), на молнии</td><td>Махровый плюш, на молнии</td></tr>
+        <tr><th>Тепло</th><td class="win">Латекс — нейтральнее</td><td>Пена с памятью — теплее</td><td>Пена с памятью — теплее</td></tr>
         <tr><th>Поза сна</th><td>Бок, спина</td><td>Бок, спина</td><td>Спина, бок</td></tr>
-        <tr><th>Гарантия</th><td class="win">2 года</td><td>Не указана</td><td>Не указана</td></tr>
-        <tr><th>Отзывы</th><td>Amazon 4,0 (60)</td><td>Нет (0 на сайте)</td><td class="win">ML 4,7 (~9 тыс.)*</td></tr>
+        <tr><th>Гарантия</th><td>Не указана</td><td class="win">2 года</td><td>3 месяца</td></tr>
+        <tr><th>Отзывы</th><td>Нет (0 на сайте)</td><td class="win">Amazon 4,6 (756)</td><td>Amazon 4,3 (1 033)</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note">* По поисковой выдаче; в вашем списке — 4,7 по 7 787 отзывам. Цифры меняются со временем, Mercado Livre напрямую не открылся.</p>
 </section>
 
 <!-- ============ FIT ============ -->
@@ -447,25 +439,25 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
   <div class="h2row">
     <div>
       <h2 class="fade">Как сядут в вашу наволочку</h2>
-      <p class="sub fade d1" style="margin-bottom:0">enVy COPPER Queen — 50,8 × 76,2 см. Схемы примерные: размер самой Duoflex производитель не указывает.</p>
+      <p class="sub fade d1" style="margin-bottom:0">enVy COPPER Queen — 50,8 × 76,2 см. Схемы примерные.</p>
     </div>
     <img class="sticker" id="sticker" src="img/cat.jpg" alt="Милый котик спит клубком на подушке" width="118" height="93">
   </div>
   <div class="fit" style="margin-top:22px">
     <div class="fitcard fade">
-      <h4>Duoflex LN2100</h4>
-      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:80%;height:78%">≈ под 70 × 50</div></div>
-      <p>По ширине совпадает, по длине останется ~6 см ткани (или больше). Упаковка 61 × 41 см, значит сама подушка, скорее всего, не больше — это оценка, не данные производителя.</p>
-    </div>
-    <div class="fitcard fade d1">
       <h4>Reconflex Cervical Relax</h4>
       <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:79%;height:63%">60 × 40</div></div>
       <p>На ~16 см короче и ~11 см уже наволочки — будет немного свободно. Можно спать в её собственном хлопковом чехле, а наволочку enVy надевать сверху.</p>
     </div>
+    <div class="fitcard fade d1">
+      <h4>Duoflex NASA Cervical</h4>
+      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:92%;height:85%">под 70 × 50</div></div>
+      <p>Рассчитана на наволочку 50 × 70: по ширине сядет почти вплотную, а по длине останется около 6 см свободной ткани. Сидит плотнее, чем Reconflex, но не идеально в размер.</p>
+    </div>
     <div class="fitcard fade d2">
-      <h4>Coluna Relax</h4>
-      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:79%;height:55%">60 × 35</div></div>
-      <p>Подушка ~на 16 см короче и ~на 16 см уже наволочки — будет ездить внутри. Удобнее пользоваться её родным чехлом 50 × 70 из комплекта.</p>
+      <h4>NAP NASA Cervical D40</h4>
+      <div class="case"><span class="lbl">наволочка 76,2 × 50,8</span><div class="pil" style="width:89%;height:94%">68 × 48</div></div>
+      <p>По данным Amazon 68 × 48 см: на ~8 см короче и ~3 см уже наволочки. Из трёх сядет плотнее всех.</p>
     </div>
   </div>
 </section>
@@ -473,18 +465,18 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
 <!-- ============ MATERIAL ============ -->
 <section id="material">
   <h2 class="fade">Латекс или пена с памятью формы</h2>
-  <p class="sub fade d1">Главное различие между двумя латексными подушками и Coluna Relax — материал.</p>
+  <p class="sub fade d1">Reconflex — натуральный латекс, обе NASA-подушки — синтетическая пена с памятью формы.</p>
   <div class="two">
     <div class="box fade">
-      <h3>Натуральный латекс</h3>
+      <h3>Натуральный латекс — Reconflex</h3>
       <p>Упругий, быстро возвращает форму, меньше «обволакивает». Держит температуру нейтральнее.</p>
-      <ul><li>Если есть аллергия на латекс — эти две модели лучше не брать без консультации аллерголога.</li></ul>
+      <ul><li>Если есть аллергия на латекс — без консультации аллерголога не брать.</li></ul>
       <blockquote>«Memory foam tends to absorb and trap body heat, while latex does a better job of remaining at a neutral temperature.»<cite>Sleep Foundation — сравнение материалов (на примере матрасов)</cite></blockquote>
     </div>
     <div class="box fade d1">
-      <h3>NASA-пена (вязкоупругая)</h3>
+      <h3>Пена NASA — Duoflex NN2100 и NAP D40</h3>
       <p>Медленно продавливается под теплом тела и «обнимает» шею, затем медленно восстанавливается. Не содержит латекса.</p>
-      <ul><li>Если вам обычно жарко во сне, это аргумент против Coluna Relax.</li></ul>
+      <ul><li>В жару и от тепла тела становится мягче — это дополнительно отдаляет её от средней жёсткости.</li></ul>
       <blockquote>«Memory foam reacts to body heat, becoming softer and more conforming… The biggest downside to memory foam is that it tends to trap body heat.»<cite>Sleep Foundation</cite></blockquote>
     </div>
   </div>
@@ -492,10 +484,9 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
     <h3>Насколько это экологично</h3>
     <ul>
       <li><b style="color:var(--text)">Ни у одной из трёх подушек не найдено независимого экосертификата</b> на сам продукт: OEKO-TEX, GOLS (органический латекс), eco-INSTITUT или CertiPUR (пена).</li>
-      <li><b style="color:var(--text)">Duoflex:</b> латекс «из сока каучукового дерева», по словам компании — единственное производство латексных подушек в Латинской Америке. Есть сертификат Протокола Монреаля за отказ от газов HCFC и аудит условий труда ABVTEX. Это сертификаты компании, а не экосертификаты подушки.</li>
       <li><b style="color:var(--text)">Reconflex:</b> «100% натуральный латекс из сока гевеи, экологичный и биоразлагаемый, без CFC» — это заявления производителя на сайте и упаковке, без названия сертифицирующего органа. Чехол — 100% хлопок.</li>
-      <li><b style="color:var(--text)">Theva (исключена):</b> сертификаты компании Inmetro, Anvisa, Abvtex, Abicol — регуляторные, не экологические; чехол из бамбуковой вискозы.</li>
-      <li><b style="color:var(--text)">Coluna Relax:</b> пена с памятью формы делается из полиуретана, то есть это синтетика (Sleep Foundation). Сертификатов на пену в открытых источниках нет.</li>
+      <li><b style="color:var(--text)">Duoflex NN2100:</b> пена с памятью формы делается из полиуретана, то есть это синтетика (Sleep Foundation). У компании Duoflex есть сертификат Протокола Монреаля за отказ от газов HCFC и аудит условий труда ABVTEX — это сертификаты компании, а не экосертификаты подушки.</li>
+      <li><b style="color:var(--text)">NAP D40:</b> 100% вязкоупругая пена (полиуретан), по данным Amazon производитель — «Poliuretanos Brasil». Экосертификатов не найдено; «Allergo Free / UltraHealth» — антиклещевая обработка, а не экосертификат.</li>
     </ul>
   </div>
   <p class="note">Подушки не заменяют консультацию врача: если вы выбираете подушку из-за боли в шее, высоту лучше подобрать с ортопедом или физиотерапевтом.</p>
@@ -507,26 +498,20 @@ footer{padding:40px 0 60px;color:var(--faint);font-size:13.5px}
   <details>
     <summary>Откуда данные и что не удалось проверить</summary>
     <ol>
-      <li>Theva, официальная страница: <a href="https://www.theva.com.br/travesseiros/travesseiro-latexlux-cervical/" target="_blank" rel="noopener">theva.com.br</a> — «100% látex natural», высота 10–12 см, наволочка 50 × 70, «capa fixa em viscose de bambu», «lavável», «antiácaros».</li>
-      <li>Duoflex, официальная страница: <a href="https://www.duoflex.com.br/travesseiros/travesseiro-natural-latex/natural-latex-cervical/" target="_blank" rel="noopener">duoflex.com.br</a> — LN2100, «Altura 12,5cm x 9cm x 11cm», «Capa percal 200 fios 100% algodão com zíper», «2 anos de garantia».</li>
-      <li>Жёсткость Duoflex: <a href="https://www.duoflex.com.br/travesseiros/" target="_blank" rel="noopener">каталог подушек Duoflex</a>, фильтр «Suporte» → «Médio»: в списке есть «Natural Látex Cervical»; в «Macio» и «Firme» её нет (проверено 12.11.2026).</li>
-      <li>Theva Latexlux исключена: производитель описывает латекс как «macia e resiliente» (мягкий), шкалы жёсткости нет.</li>
       <li>Reconflex: <a href="https://www.reconflex.com.br/travesseiro-latex-natural-cervical-relax-40x60x12/p" target="_blank" rel="noopener">страница товара</a> — «Látex 100% Natural», «Suporte Firme», «Capa Removível em Malha 100% Algodão», «Altura 12 cm», «Dorme de lado ou barriga para cima»; R$ 390, «10% OFF no PIX». Наличие (10 шт.) и доставка в Рио (R$ 250, 16 раб. дней на индекс 22071-000) — из каталога и корзины магазина.</li>
-      <li>Empório do Lençol: Duoflex Natural Látex Cervical R$ 319,99, «100% Látex Natural», доставка на индекс 22071-000 — R$ 30,26 за 6 раб. дней (корзина магазина).</li>
-      <li>Отброшены: Duoflex «Látex Light Cervical» — «Espuma Poliuretano» (синтетика); Fibrasca Performance — «T. Látex»/профилированная пена; Simmons Natural Látex — жёсткая и натуральная, но обычной, не цервикальной формы.</li>
-      <li>Coluna Relax: жёсткость «Não informada» и 30 дней на пробу — по таблице обзора <a href="https://emcasacomcecilia.com/reviews/travesseiro-i-wanna-sleep-ou-emma" target="_blank" rel="noopener">emcasacomcecilia.com</a> (данные сайтов брендов на 12.10.2026).</li>
-      <li>Экологичность: <a href="https://www.duoflex.com.br/empresa/" target="_blank" rel="noopener">Duoflex — о компании</a> (ABVTEX, сертификат Протокола Монреаля, «látex natural… produzido a partir da seiva da seringueira»); <a href="https://www.theva.com.br/sobre/" target="_blank" rel="noopener">Theva — о компании</a> («Certificações Inmetro, Anvisa, Abvtex e Abicol»); Sleep Foundation: «Memory foam is made by taking polyurethane». Поиск по OEKO-TEX, GOLS, eco-INSTITUT, CertiPUR для этих моделей результатов не дал (12.11.2026).</li>
-      <li>Colchãoweb — «Nível de conforto: Macio», «dorme de lado ou de costas», цена R$ 385 / R$ 358,05 Pix.</li>
-      <li>Cirúrgica Santista — R$ 257, в наличии, упаковка 61 × 41 × 14 см.</li>
-      <li>Amazon.com.br (B0B9T7P6QQ) — R$ 265,81, 4,0 / 5 по 60 оценкам, «Somente 4 em estoque».</li>
-      <li>Catran — Coluna Relax 60 × 35 × 11 см, высота 9–11 см, «Espuma Nasa», уголь, чехол 50 × 70, наполнитель не стирается, R$ 216,50 / R$ 227,90.</li>
-      <li>I Wanna Sleep, главная страница магазина — «Preço normal R$ 259, Preço promocional R$ 207».</li>
+      <li>Duoflex NASA Cervical, официальная страница: <a href="https://www.duoflex.com.br/travesseiros/travesseiro-nasa/nasa-cervical/" target="_blank" rel="noopener">duoflex.com.br</a> — «NN2100», «Para fronha 50cm x 70cm», «Altura 12,5cm / 7,5cm / 11cm», «2 anos de garantia», «Capa Plush Algodão e Poliéster com zíper», «Espuma viscoelástica NASA».</li>
+      <li>Жёсткость NN2100: <a href="https://www.duoflex.com.br/travesseiros/" target="_blank" rel="noopener">каталог подушек Duoflex</a>, фильтр «Suporte»: «NASA CERVICAL» есть только в «Macio»; в «Médio» и «Firme» её нет (проверено 12.11.2026).</li>
+      <li>Amazon.com.br: <a href="https://www.amazon.com.br/dp/B07D3MJXYY" target="_blank" rel="noopener">NN2100</a> — R$ 142,40, 4,6 / 5 (756), «Somente 5 em estoque»; <a href="https://www.amazon.com.br/dp/B07QY2HYKD" target="_blank" rel="noopener">NN2109</a> — R$ 138,60, 4,6 / 5 (697), «Em estoque».</li>
+      <li>Empório do Lençol: NASA Cervical R$ 194,99, доставка на индекс 22071-000 — R$ 132,68 за 6 раб. дней (корзина магазина).</li>
+      <li>Экологичность: <a href="https://www.duoflex.com.br/empresa/" target="_blank" rel="noopener">Duoflex — о компании</a> (ABVTEX, сертификат Протокола Монреаля); Sleep Foundation: «Memory foam is made by taking polyurethane». Поиск по OEKO-TEX, GOLS, eco-INSTITUT, CertiPUR результатов не дал (12.11.2026).</li>
+      <li>NAP D40: <a href="https://www.amazon.com.br/dp/B0BMXZ1GP8" target="_blank" rel="noopener">Amazon B0BMXZ1GP8</a> — «Densidade D40», «100% viscoelástico», «Capa Super Plush atoalhada», 68 × 48 × 12 см, гарантия 3 месяца, 4,3 / 5 (1 033), R$ 74,08, «Em estoque»; <a href="https://www.constamed.com.br/sono/travesseiros-terapeuticos-e-ortopedicos/travesseiro-ortopedico-nasa/travesseiro-nasa-ortopedico-cervical-densidade-40-medio" target="_blank" rel="noopener">Constamed</a> — «Marca: NAP», «viscoelástico densidade D40 MEDIO 12/10CM», чехол съёмный, на молнии, R$ 111,11. Жёсткость нигде не указана.</li>
       <li>Курс: <a href="https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='11-01-2026'&amp;@dataFinalCotacao='11-12-2026'&amp;$format=json" target="_blank" rel="noopener">API ЦБ Бразилии (PTAX)</a> — продажа 5,5606 на 11.11.2026. Пересчёт: цена в R$ ÷ 5,5606.</li>
       <li>Материалы: <a href="https://www.sleepfoundation.org/mattress-information/what-is-the-difference-between-memory-foam-and-latex" target="_blank" rel="noopener">Sleep Foundation — Memory Foam vs. Latex</a>.</li>
-      <li><b>Не удалось проверить:</b> Mercado Livre, Casa do Médico (3 магазина в Рио), Multiclasse и Enxovais Monte Santo блокируют автоматический доступ (403/429). Их цены и рейтинги взяты из вашего списка или поисковой выдачи и помечены жёлтой точкой — уточните на месте перед покупкой.</li>
+      <li>Убраны по вашей просьбе: Duoflex Natural Látex Cervical LN2100, I Wanna Sleep Coluna Relax. Раньше исключены: Theva Latexlux (производитель называет её латекс мягким).</li>
+      <li><b>Не удалось проверить:</b> Mercado Livre блокирует автоматический доступ (403) — цены R$ 169,90 (NN2100, 4,6 по 633) и R$ 85–135 (NAP), а также описание NAP как «твёрдой» взяты из ваших сообщений. Стоимость доставки Amazon и Constamed в Рио не проверена.</li>
     </ol>
     <ul>
-      <li>Фото подушек — с официальных сайтов Duoflex, Reconflex, I Wanna Sleep и магазинов Cirúrgica Santista, Catran.</li>
+      <li>Фото подушек — с официальных сайтов Reconflex и Duoflex, с Amazon.com.br и Constamed.</li>
       <li>Стикер: «<a href="https://commons.wikimedia.org/wiki/File:Cat_sleeping_on_Pillow.jpg" target="_blank" rel="noopener">Cat sleeping on Pillow</a>», автор Rainebgone, CC BY-SA 4.0, Wikimedia Commons (обрезано).</li>
     </ul>
   </details>
